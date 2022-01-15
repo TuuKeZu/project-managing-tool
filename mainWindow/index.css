@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Our code starts from here! */
+.container-main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar{
+    height: 10%; /* we can debug stuff by adding placeholder colors*/
+    background-color: #6BC9B0;
+}
+
+.grid-container{
+    height: 90%;
+    display: grid;
+
+    grid-template-columns: repeat(4, 475px);
+    grid-template-rows: repeat(auto-fill, 475px);
+}
+
+.parent-project{
+    height: 475px;
+    width: 475px;
+    background-color: white;
+    /* debug red*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent-project-data{
+    background-color: red;
+    width: 90%;
+    height: 90%;
+}
+
+.parent-project-data h1{
+    color: azure;
+    text-align: left;
+
+    font-size: 70px;
+    padding-left: 35px;
+    padding-top: 20px;
+
+    /*with margin, it moves the whole element, and with padding, it only adds "empty space"*/
+    
+}
+
+.parent-project-data h2{
+    color: azure;
+    text-align: left;
+
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 20px;
+
+    /*with margin, it moves the whole element, and with padding, it only adds "empty space"*/
+    
+}
+
+
+.create-new-button{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 225, 255);
+    bottom: 40px;
+    right: 40px;
+}
+
+.create-new-button button{
+    width: 100%;
+    height: 100%;
+    font-size: 80px;
+
+    background: none;
+    border: none;
+}
+
+/*
+now if you open f12, we can see that 
+those parent-projects don't allign in the grid like pattern we want 
+*/
+
+
