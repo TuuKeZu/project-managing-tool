@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "name": "default-project",
+            "due": "today",
+            "subProjects": [
+                {
+                    "name": "test-1",
+                    "textContent": "Lorem Ipusum"
+                }
+            ]
+        }
+    ]
+}

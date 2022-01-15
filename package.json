@@ -1,0 +1,15 @@
+{
+  "name": "projectmanager",
+  "version": "1.0.0",
+  "description": "simple windows application dedicated to make managing school projects easier.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "-",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^16.0.7"
+  }
+}
